@@ -19,3 +19,12 @@ C:\Users\LAM.BT183572\OneDrive - Hanoi University of Science and Technology\OS 2
 C:\Users\LAM.BT183572\OneDrive - Hanoi University of Science and Technology\OS 20192\Task-Manager-Windows\TaskManagerForm\bin\Debug\TaskManagerForm.exe.config
 C:\Users\LAM.BT183572\OneDrive - Hanoi University of Science and Technology\OS 20192\Task-Manager-Windows\TaskManagerForm\obj\Debug\TaskManagerForm.exe
 C:\Users\LAM.BT183572\OneDrive - Hanoi University of Science and Technology\OS 20192\Task-Manager-Windows\TaskManagerForm\obj\Debug\TaskManagerForm.pdb
+F:\Visual Studio 2015\Task-Manager-Windows\TaskManagerForm\bin\Debug\TaskManagerForm.exe.config
+F:\Visual Studio 2015\Task-Manager-Windows\TaskManagerForm\bin\Debug\TaskManagerForm.exe
+F:\Visual Studio 2015\Task-Manager-Windows\TaskManagerForm\bin\Debug\TaskManagerForm.pdb
+F:\Visual Studio 2015\Task-Manager-Windows\TaskManagerForm\obj\Debug\TaskManagerForm.Properties.Resources.resources
+F:\Visual Studio 2015\Task-Manager-Windows\TaskManagerForm\obj\Debug\TaskManagerForm.RunNewTask.resources
+F:\Visual Studio 2015\Task-Manager-Windows\TaskManagerForm\obj\Debug\TaskManagerForm.TaskManagerForm.resources
+F:\Visual Studio 2015\Task-Manager-Windows\TaskManagerForm\obj\Debug\TaskManager.csproj.GenerateResource.Cache
+F:\Visual Studio 2015\Task-Manager-Windows\TaskManagerForm\obj\Debug\TaskManagerForm.exe
+F:\Visual Studio 2015\Task-Manager-Windows\TaskManagerForm\obj\Debug\TaskManagerForm.pdb

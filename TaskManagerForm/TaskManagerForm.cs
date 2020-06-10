@@ -121,5 +121,14 @@ namespace TaskManagerForm
             listView.ListViewItemSorter = new ListViewItemComparer(e.Column);
             listView.Sort();
         }
+        
+        private void runNewTaskToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            using (RunNewTask frm = new RunNewTask())
+            {
+                if (frm.ShowDialog() == DialogResult.OK)
+                    GetProcess();
+            }
+        }
     }
 }

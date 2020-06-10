@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ListViewItemComparer.cs" />
+    <Compile Include="RunNewTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RunNewTask.Designer.cs">
+      <DependentUpon>RunNewTask.cs</DependentUpon>
+    </Compile>
     <Compile Include="TaskManagerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +70,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RunNewTask.resx">
+      <DependentUpon>RunNewTask.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TaskManagerForm.resx">
       <DependentUpon>TaskManagerForm.cs</DependentUpon>
     </EmbeddedResource>

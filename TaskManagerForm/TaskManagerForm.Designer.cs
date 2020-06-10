@@ -43,7 +43,11 @@
             this.realtimeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.endTaskButton = new System.Windows.Forms.Button();
             this.reloadButton = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.runNewTaskToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rightClickMenu.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // listView
@@ -54,9 +58,9 @@
             this.Memory,
             this.Status});
             this.listView.ContextMenuStrip = this.rightClickMenu;
-            this.listView.Location = new System.Drawing.Point(12, 13);
+            this.listView.Location = new System.Drawing.Point(12, 27);
             this.listView.Name = "listView";
-            this.listView.Size = new System.Drawing.Size(629, 505);
+            this.listView.Size = new System.Drawing.Size(629, 491);
             this.listView.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.listView.TabIndex = 0;
             this.listView.UseCompatibleStateImageBehavior = false;
@@ -112,28 +116,28 @@
             // idleToolStripMenuItem
             // 
             this.idleToolStripMenuItem.Name = "idleToolStripMenuItem";
-            this.idleToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.idleToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.idleToolStripMenuItem.Text = "Idle";
             this.idleToolStripMenuItem.Click += new System.EventHandler(this.idleToolStripMenuItem_Click);
             // 
             // normalToolStripMenuItem
             // 
             this.normalToolStripMenuItem.Name = "normalToolStripMenuItem";
-            this.normalToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.normalToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.normalToolStripMenuItem.Text = "Normal";
             this.normalToolStripMenuItem.Click += new System.EventHandler(this.normalToolStripMenuItem_Click);
             // 
             // highToolStripMenuItem
             // 
             this.highToolStripMenuItem.Name = "highToolStripMenuItem";
-            this.highToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.highToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.highToolStripMenuItem.Text = "High";
             this.highToolStripMenuItem.Click += new System.EventHandler(this.highToolStripMenuItem_Click);
             // 
             // realtimeToolStripMenuItem
             // 
             this.realtimeToolStripMenuItem.Name = "realtimeToolStripMenuItem";
-            this.realtimeToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.realtimeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.realtimeToolStripMenuItem.Text = "Realtime";
             this.realtimeToolStripMenuItem.Click += new System.EventHandler(this.realtimeToolStripMenuItem_Click);
             // 
@@ -157,18 +161,47 @@
             this.reloadButton.UseVisualStyleBackColor = true;
             this.reloadButton.Click += new System.EventHandler(this.reloadButton_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(653, 24);
+            this.menuStrip1.TabIndex = 3;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.runNewTaskToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
+            this.fileToolStripMenuItem.Text = "Tool";
+            // 
+            // runNewTaskToolStripMenuItem
+            // 
+            this.runNewTaskToolStripMenuItem.Name = "runNewTaskToolStripMenuItem";
+            this.runNewTaskToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.runNewTaskToolStripMenuItem.Text = "Run new task";
+            this.runNewTaskToolStripMenuItem.Click += new System.EventHandler(this.runNewTaskToolStripMenuItem_Click_1);
+            // 
             // TaskManagerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(653, 559);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.reloadButton);
             this.Controls.Add(this.endTaskButton);
             this.Controls.Add(this.listView);
             this.Name = "TaskManagerForm";
             this.Text = "Simple Task Manager";
             this.rightClickMenu.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -188,6 +221,10 @@
         private System.Windows.Forms.ColumnHeader Status;
         private System.Windows.Forms.Button endTaskButton;
         private System.Windows.Forms.Button reloadButton;
+        private System.Windows.Forms.Button runNewTaskButton;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem runNewTaskToolStripMenuItem;
     }
 }
 
