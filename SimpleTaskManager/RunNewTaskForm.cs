@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TaskManagerForm
+namespace SimpleTaskManager
 {
     public partial class RunNewTaskForm : Form
     {

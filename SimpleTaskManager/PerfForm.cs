@@ -11,7 +11,7 @@ using System.Management;
 using Microsoft.VisualBasic.Devices;
 using System.Diagnostics;
 
-namespace TaskManagerForm
+namespace SimpleTaskManager
 {
     public partial class PerfForm : Form
     {
