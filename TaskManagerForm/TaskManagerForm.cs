@@ -122,7 +122,16 @@ namespace TaskManagerForm
             listView.Sort();
         }
 
-        private void perfButton_Click(object sender, EventArgs e)
+        private void runNewTaskToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (RunNewTaskForm runNewTaskForm = new RunNewTaskForm())
+            {
+                if (runNewTaskForm.ShowDialog() == DialogResult.OK)
+                    GetProcess();
+            }
+        }
+
+        private void performanceToolStripMenuItem_Click(object sender, EventArgs e)
         {
             PerfForm perfForm = new PerfForm();
             perfForm.ShowDialog();

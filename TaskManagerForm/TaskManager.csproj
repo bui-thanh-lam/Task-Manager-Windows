@@ -55,6 +55,12 @@
     <Compile Include="PerfForm.Designer.cs">
       <DependentUpon>PerfForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="RunNewTaskForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RunNewTaskForm.Designer.cs">
+      <DependentUpon>RunNewTaskForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="TaskManagerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RunNewTaskForm.resx">
+      <DependentUpon>RunNewTaskForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TaskManagerForm.resx">
       <DependentUpon>TaskManagerForm.cs</DependentUpon>
     </EmbeddedResource>

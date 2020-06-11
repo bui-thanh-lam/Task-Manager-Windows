@@ -45,7 +45,6 @@ namespace TaskManagerForm
             float avaiRAM = cpI.TotalPhysicalMemory / (1024 * 1024 * 1024); //GB
             
             labelRAM.Text = string.Format("{0:0.0} GB", (fram / 100) * avaiRAM);
-            //labelRAM.Text += " / " + string.Format("{0:0.0} GB", avaiRAM);
             labelCmt.Text = string.Format("{0:0.0} GB", framCmt / (1024 * 1024 * 1024));
             labelRamAvai.Text = string.Format("{0:0.0} GB", framAvai / 1024);
             labelCached.Text = string.Format("{0:0.0} GB", fCached / (1024 * 1024 * 1024));
@@ -70,6 +69,7 @@ namespace TaskManagerForm
             chartDiskRate.Series["DiskWrite"].Points.AddY(fdWrite);
         }
 
+        
         private void WIFI_count()
         {
             float fsend = pNetSend.NextValue();
@@ -81,8 +81,8 @@ namespace TaskManagerForm
             chartWIFI.Series["Send"].Points.AddY(fsend);
             chartWIFI.Series["Receive"].Points.AddY(freceive);
         }
-
-        /*       public void printNetworkCards()
+        /*
+        public void printNetworkCards()
                {
                    PerformanceCounterCategory category = new PerformanceCounterCategory("Network Interface");
                    String[] instancename = category.GetInstanceNames();
