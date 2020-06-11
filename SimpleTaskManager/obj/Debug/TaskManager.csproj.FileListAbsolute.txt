@@ -16,9 +16,6 @@ C:\Users\LAM.BT183572\OneDrive - Hanoi University of Science and Technology\OS 2
 C:\Users\LAM.BT183572\OneDrive - Hanoi University of Science and Technology\OS 20192\Task Manager\TaskManagerForm\obj\Debug\TaskManagerForm.Properties.Resources.resources
 C:\Users\LAM.BT183572\OneDrive - Hanoi University of Science and Technology\OS 20192\Task Manager\TaskManagerForm\obj\Debug\TaskManagerForm.TaskManagerForm.resources
 C:\Users\LAM.BT183572\OneDrive - Hanoi University of Science and Technology\OS 20192\Task Manager\TaskManagerForm\obj\Debug\TaskManager.csproj.GenerateResource.Cache
-C:\Users\LAM.BT183572\OneDrive - Hanoi University of Science and Technology\OS 20192\Task-Manager-Windows\TaskManagerForm\bin\Debug\TaskManagerForm.exe.config
-C:\Users\LAM.BT183572\OneDrive - Hanoi University of Science and Technology\OS 20192\Task-Manager-Windows\TaskManagerForm\obj\Debug\TaskManagerForm.exe
-C:\Users\LAM.BT183572\OneDrive - Hanoi University of Science and Technology\OS 20192\Task-Manager-Windows\TaskManagerForm\obj\Debug\TaskManagerForm.pdb
 D:\GitHub\OS_project\Task-Manager-Windows\TaskManagerForm\bin\Debug\TaskManagerForm.exe.config
 D:\GitHub\OS_project\Task-Manager-Windows\TaskManagerForm\bin\Debug\TaskManagerForm.exe
 D:\GitHub\OS_project\Task-Manager-Windows\TaskManagerForm\bin\Debug\TaskManagerForm.pdb
@@ -30,11 +27,14 @@ D:\GitHub\OS_project\Task-Manager-Windows\TaskManagerForm\obj\Debug\TaskManager.
 D:\GitHub\OS_project\Task-Manager-Windows\TaskManagerForm\obj\Debug\TaskManagerForm.exe
 D:\GitHub\OS_project\Task-Manager-Windows\TaskManagerForm\obj\Debug\TaskManagerForm.pdb
 D:\GitHub\OS_project\Task-Manager-Windows\TaskManagerForm\obj\Debug\TaskManagerForm.PerfForm.resources
-C:\Users\LAM.BT183572\OneDrive - Hanoi University of Science and Technology\OS 20192\Task-Manager-Windows\TaskManagerForm\bin\Debug\TaskManagerForm.exe
-C:\Users\LAM.BT183572\OneDrive - Hanoi University of Science and Technology\OS 20192\Task-Manager-Windows\TaskManagerForm\bin\Debug\TaskManagerForm.pdb
 C:\Users\LAM.BT183572\OneDrive - Hanoi University of Science and Technology\OS 20192\Task-Manager-Windows\TaskManagerForm\obj\Debug\TaskManager.csprojResolveAssemblyReference.cache
 C:\Users\LAM.BT183572\OneDrive - Hanoi University of Science and Technology\OS 20192\Task-Manager-Windows\TaskManagerForm\obj\Debug\TaskManagerForm.PerfForm.resources
-C:\Users\LAM.BT183572\OneDrive - Hanoi University of Science and Technology\OS 20192\Task-Manager-Windows\TaskManagerForm\obj\Debug\TaskManagerForm.Properties.Resources.resources
 C:\Users\LAM.BT183572\OneDrive - Hanoi University of Science and Technology\OS 20192\Task-Manager-Windows\TaskManagerForm\obj\Debug\TaskManagerForm.TaskManagerForm.resources
 C:\Users\LAM.BT183572\OneDrive - Hanoi University of Science and Technology\OS 20192\Task-Manager-Windows\TaskManagerForm\obj\Debug\TaskManager.csproj.GenerateResource.Cache
 C:\Users\LAM.BT183572\OneDrive - Hanoi University of Science and Technology\OS 20192\Task-Manager-Windows\TaskManagerForm\obj\Debug\TaskManagerForm.RunNewTaskForm.resources
+C:\Users\LAM.BT183572\OneDrive - Hanoi University of Science and Technology\OS 20192\Task-Manager-Windows\TaskManagerForm\bin\Debug\SimpleTaskManager.exe.config
+C:\Users\LAM.BT183572\OneDrive - Hanoi University of Science and Technology\OS 20192\Task-Manager-Windows\TaskManagerForm\bin\Debug\SimpleTaskManager.exe
+C:\Users\LAM.BT183572\OneDrive - Hanoi University of Science and Technology\OS 20192\Task-Manager-Windows\TaskManagerForm\bin\Debug\SimpleTaskManager.pdb
+C:\Users\LAM.BT183572\OneDrive - Hanoi University of Science and Technology\OS 20192\Task-Manager-Windows\TaskManagerForm\obj\Debug\SimpleTaskManager.Properties.Resources.resources
+C:\Users\LAM.BT183572\OneDrive - Hanoi University of Science and Technology\OS 20192\Task-Manager-Windows\TaskManagerForm\obj\Debug\SimpleTaskManager.exe
+C:\Users\LAM.BT183572\OneDrive - Hanoi University of Science and Technology\OS 20192\Task-Manager-Windows\TaskManagerForm\obj\Debug\SimpleTaskManager.pdb

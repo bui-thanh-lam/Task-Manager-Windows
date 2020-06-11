@@ -69,41 +69,14 @@ namespace TaskManagerForm
             chartDiskRate.Series["DiskWrite"].Points.AddY(fdWrite);
         }
 
-        
-        private void WIFI_count()
-        {
-            float fsend = pNetSend.NextValue();
-            float freceive = pNetReceive.NextValue();
-
-            labelNetSend.Text = string.Format("{0:0.0} Kbps", fsend * 8 / 1024);
-            labelNetReceive.Text = string.Format("{0:0.0} Kbps", freceive * 8 / 1024);
-
-            chartWIFI.Series["Send"].Points.AddY(fsend);
-            chartWIFI.Series["Receive"].Points.AddY(freceive);
-        }
-        /*
-        public void printNetworkCards()
-               {
-                   PerformanceCounterCategory category = new PerformanceCounterCategory("Network Interface");
-                   String[] instancename = category.GetInstanceNames();
-
-                   foreach (string name in instancename)
-                   {
-                       Console.WriteLine(name);
-                   }
-               }
-       */
-
         private void timer_Tick(object sender, EventArgs e)
         {
             CPU_count();
             RAM_count();
             DISK_count();
-            //printNetworkCards();
-            WIFI_count();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void perfForm_Load(object sender, EventArgs e)
         {
             timer.Start();
         }
