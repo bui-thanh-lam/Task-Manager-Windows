@@ -121,5 +121,11 @@ namespace TaskManagerForm
             listView.ListViewItemSorter = new ListViewItemComparer(e.Column);
             listView.Sort();
         }
+
+        private void perfButton_Click(object sender, EventArgs e)
+        {
+            PerfForm perfForm = new PerfForm();
+            perfForm.ShowDialog();
+        }
     }
 }
