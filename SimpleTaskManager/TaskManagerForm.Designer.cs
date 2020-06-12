@@ -34,6 +34,7 @@
             this.ProcessID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Memory = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Status = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ProcessType = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.rightClickMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.endTaskToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setPriorityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,12 +59,13 @@
             this.ProcessName,
             this.ProcessID,
             this.Memory,
-            this.Status});
+            this.Status,
+            this.ProcessType});
             this.listView.ContextMenuStrip = this.rightClickMenu;
             this.listView.HideSelection = false;
             this.listView.Location = new System.Drawing.Point(12, 27);
             this.listView.Name = "listView";
-            this.listView.Size = new System.Drawing.Size(629, 491);
+            this.listView.Size = new System.Drawing.Size(650, 491);
             this.listView.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.listView.TabIndex = 0;
             this.listView.UseCompatibleStateImageBehavior = false;
@@ -89,6 +91,11 @@
             // 
             this.Status.Text = "Status";
             this.Status.Width = 100;
+            // 
+            // ProcessType
+            // 
+            this.ProcessType.Text = "ProcessType";
+            this.ProcessType.Width = 200;
             // 
             // rightClickMenu
             // 
@@ -147,7 +154,7 @@
             // 
             // endTaskButton
             // 
-            this.endTaskButton.Location = new System.Drawing.Point(566, 524);
+            this.endTaskButton.Location = new System.Drawing.Point(587, 524);
             this.endTaskButton.Name = "endTaskButton";
             this.endTaskButton.Size = new System.Drawing.Size(75, 23);
             this.endTaskButton.TabIndex = 1;
@@ -178,7 +185,7 @@
             this.toolToolStripMenuItem});
             this.mainMenu.Location = new System.Drawing.Point(0, 0);
             this.mainMenu.Name = "mainMenu";
-            this.mainMenu.Size = new System.Drawing.Size(653, 24);
+            this.mainMenu.Size = new System.Drawing.Size(674, 24);
             this.mainMenu.TabIndex = 4;
             this.mainMenu.Text = "menuStrip1";
             // 
@@ -194,14 +201,14 @@
             // runNewTaskToolStripMenuItem
             // 
             this.runNewTaskToolStripMenuItem.Name = "runNewTaskToolStripMenuItem";
-            this.runNewTaskToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.runNewTaskToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.runNewTaskToolStripMenuItem.Text = "Run New Task";
             this.runNewTaskToolStripMenuItem.Click += new System.EventHandler(this.runNewTaskToolStripMenuItem_Click);
             // 
             // performanceToolStripMenuItem
             // 
             this.performanceToolStripMenuItem.Name = "performanceToolStripMenuItem";
-            this.performanceToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.performanceToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.performanceToolStripMenuItem.Text = "Performance";
             this.performanceToolStripMenuItem.Click += new System.EventHandler(this.performanceToolStripMenuItem_Click);
             // 
@@ -209,7 +216,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(653, 559);
+            this.ClientSize = new System.Drawing.Size(674, 554);
             this.Controls.Add(this.mainMenu);
             this.Controls.Add(this.perfButton);
             this.Controls.Add(this.reloadButton);
@@ -232,6 +239,8 @@
         private System.Windows.Forms.ColumnHeader ProcessName;
         private System.Windows.Forms.ColumnHeader ProcessID;
         private System.Windows.Forms.ColumnHeader Memory;
+        private System.Windows.Forms.ColumnHeader Status;
+        private System.Windows.Forms.ColumnHeader ProcessType;
         private System.Windows.Forms.ContextMenuStrip rightClickMenu;
         private System.Windows.Forms.ToolStripMenuItem endTaskToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem setPriorityToolStripMenuItem;
@@ -239,7 +248,6 @@
         private System.Windows.Forms.ToolStripMenuItem normalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem highToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem realtimeToolStripMenuItem;
-        private System.Windows.Forms.ColumnHeader Status;
         private System.Windows.Forms.Button endTaskButton;
         private System.Windows.Forms.Button reloadButton;
         private System.Windows.Forms.Button perfButton;

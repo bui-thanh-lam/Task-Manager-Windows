@@ -31,6 +31,7 @@ namespace SimpleTaskManager
                 newItem.SubItems.Add(new ListViewItem.ListViewSubItem() { Text = p.Id.ToString() });
                 newItem.SubItems.Add(new ListViewItem.ListViewSubItem() { Text = MemoryToString(p.PrivateMemorySize64) });
                 newItem.SubItems.Add(new ListViewItem.ListViewSubItem() { Text = (p.Responding == true ? "Responding" : "Not responding") });
+                newItem.SubItems.Add(new ListViewItem.ListViewSubItem() { Text = (p.MainWindowHandle == IntPtr.Zero)? "Backgrorund Process" : (String.IsNullOrEmpty(p.MainWindowTitle)?"Window Process":"App") });
                 newItem.SubItems.Add(new ListViewItem.ListViewSubItem() { Text = p.PrivateMemorySize64.ToString() });
                 listView.Items.Add(newItem);
             }

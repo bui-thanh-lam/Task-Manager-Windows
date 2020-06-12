@@ -22,7 +22,7 @@ namespace SimpleTaskManager
         public int Compare(object x, object y)
         {
             int returnValue = -1;
-            if (col == 0 || col == 3)
+            if (col == 0 || col == 3 || col ==4)
             {
                 returnValue = String.Compare(((ListViewItem)x).SubItems[col].Text,
                     ((ListViewItem)y).SubItems[col].Text);
@@ -31,7 +31,7 @@ namespace SimpleTaskManager
                 returnValue = Int32.Parse(((ListViewItem)x).SubItems[col].Text) - Int32.Parse(((ListViewItem)y).SubItems[col].Text);
             } else if (col == 2)
             {
-                returnValue = Int32.Parse(((ListViewItem)x).SubItems[4].Text) - Int32.Parse(((ListViewItem)y).SubItems[4].Text);
+                returnValue = Int32.Parse(((ListViewItem)x).SubItems[5].Text) - Int32.Parse(((ListViewItem)y).SubItems[5].Text);
             }
             return returnValue;
         }
