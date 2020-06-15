@@ -29,22 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -84,13 +80,13 @@
             this.label6 = new System.Windows.Forms.Label();
             this.chartDiskUse = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label5 = new System.Windows.Forms.Label();
-            this.tabWifi = new System.Windows.Forms.TabPage();
-            this.labelWifiR = new System.Windows.Forms.Label();
-            this.labelWifiS = new System.Windows.Forms.Label();
+            this.tabInternet = new System.Windows.Forms.TabPage();
+            this.labelNetR = new System.Windows.Forms.Label();
+            this.labelNetS = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.chartWifi = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartInternet = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.pCPU = new System.Diagnostics.PerformanceCounter();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.pRAM = new System.Diagnostics.PerformanceCounter();
@@ -104,13 +100,8 @@
             this.pNPaged = new System.Diagnostics.PerformanceCounter();
             this.pHandle = new System.Diagnostics.PerformanceCounter();
             this.pProcess = new System.Diagnostics.PerformanceCounter();
-            this.tabEthernet = new System.Windows.Forms.TabPage();
-            this.chartEthernet = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.labelNetworkType = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.labelEthernetS = new System.Windows.Forms.Label();
-            this.labelEthernetR = new System.Windows.Forms.Label();
             this.tabPerformance.SuspendLayout();
             this.tabCPU.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartCPU)).BeginInit();
@@ -119,8 +110,8 @@
             this.tabDisk.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartDiskRate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartDiskUse)).BeginInit();
-            this.tabWifi.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartWifi)).BeginInit();
+            this.tabInternet.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartInternet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pCPU)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pRAM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pDISK)).BeginInit();
@@ -133,8 +124,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pNPaged)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pHandle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pProcess)).BeginInit();
-            this.tabEthernet.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartEthernet)).BeginInit();
             this.SuspendLayout();
             // 
             // tabPerformance
@@ -143,8 +132,7 @@
             this.tabPerformance.Controls.Add(this.tabCPU);
             this.tabPerformance.Controls.Add(this.tabRAM);
             this.tabPerformance.Controls.Add(this.tabDisk);
-            this.tabPerformance.Controls.Add(this.tabWifi);
-            this.tabPerformance.Controls.Add(this.tabEthernet);
+            this.tabPerformance.Controls.Add(this.tabInternet);
             this.tabPerformance.Location = new System.Drawing.Point(12, 12);
             this.tabPerformance.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPerformance.Name = "tabPerformance";
@@ -175,17 +163,17 @@
             // chartCPU
             // 
             this.chartCPU.BackColor = System.Drawing.Color.PapayaWhip;
-            chartArea1.AxisY.Maximum = 100D;
-            chartArea1.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.BackwardDiagonal;
-            chartArea1.Name = "ChartArea1";
-            this.chartCPU.ChartAreas.Add(chartArea1);
+            chartArea7.AxisY.Maximum = 100D;
+            chartArea7.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.BackwardDiagonal;
+            chartArea7.Name = "ChartArea1";
+            this.chartCPU.ChartAreas.Add(chartArea7);
             this.chartCPU.Location = new System.Drawing.Point(17, 47);
             this.chartCPU.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartCPU.Name = "chartCPU";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.Name = "CPU";
-            this.chartCPU.Series.Add(series1);
+            series10.ChartArea = "ChartArea1";
+            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series10.Name = "CPU";
+            this.chartCPU.Series.Add(series10);
             this.chartCPU.Size = new System.Drawing.Size(700, 300);
             this.chartCPU.TabIndex = 2;
             // 
@@ -417,20 +405,20 @@
             // chartRAM
             // 
             this.chartRAM.BackColor = System.Drawing.Color.PapayaWhip;
-            chartArea2.AxisY.Maximum = 100D;
-            chartArea2.Name = "ChartArea1";
-            this.chartRAM.ChartAreas.Add(chartArea2);
-            legend1.Enabled = false;
-            legend1.Name = "Legend1";
-            this.chartRAM.Legends.Add(legend1);
+            chartArea8.AxisY.Maximum = 100D;
+            chartArea8.Name = "ChartArea1";
+            this.chartRAM.ChartAreas.Add(chartArea8);
+            legend6.Enabled = false;
+            legend6.Name = "Legend1";
+            this.chartRAM.Legends.Add(legend6);
             this.chartRAM.Location = new System.Drawing.Point(15, 49);
             this.chartRAM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartRAM.Name = "chartRAM";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.Legend = "Legend1";
-            series2.Name = "RAM";
-            this.chartRAM.Series.Add(series2);
+            series11.ChartArea = "ChartArea1";
+            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series11.Legend = "Legend1";
+            series11.Name = "RAM";
+            this.chartRAM.Series.Add(series11);
             this.chartRAM.Size = new System.Drawing.Size(700, 300);
             this.chartRAM.TabIndex = 0;
             this.chartRAM.Text = "chartRAM";
@@ -489,26 +477,26 @@
             // 
             this.chartDiskRate.AntiAliasing = System.Windows.Forms.DataVisualization.Charting.AntiAliasingStyles.None;
             this.chartDiskRate.BackColor = System.Drawing.Color.PapayaWhip;
-            chartArea3.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
-            chartArea3.Name = "ChartArea1";
-            this.chartDiskRate.ChartAreas.Add(chartArea3);
-            legend2.Enabled = false;
-            legend2.Name = "Legend1";
-            this.chartDiskRate.Legends.Add(legend2);
+            chartArea9.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
+            chartArea9.Name = "ChartArea1";
+            this.chartDiskRate.ChartAreas.Add(chartArea9);
+            legend7.Enabled = false;
+            legend7.Name = "Legend1";
+            this.chartDiskRate.Legends.Add(legend7);
             this.chartDiskRate.Location = new System.Drawing.Point(17, 350);
             this.chartDiskRate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartDiskRate.Name = "chartDiskRate";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series3.IsVisibleInLegend = false;
-            series3.Legend = "Legend1";
-            series3.Name = "DiskRead";
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series4.Legend = "Legend1";
-            series4.Name = "DiskWrite";
-            this.chartDiskRate.Series.Add(series3);
-            this.chartDiskRate.Series.Add(series4);
+            series12.ChartArea = "ChartArea1";
+            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series12.IsVisibleInLegend = false;
+            series12.Legend = "Legend1";
+            series12.Name = "DiskRead";
+            series13.ChartArea = "ChartArea1";
+            series13.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series13.Legend = "Legend1";
+            series13.Name = "DiskWrite";
+            this.chartDiskRate.Series.Add(series12);
+            this.chartDiskRate.Series.Add(series13);
             this.chartDiskRate.Size = new System.Drawing.Size(700, 117);
             this.chartDiskRate.TabIndex = 3;
             this.chartDiskRate.Text = "chart2";
@@ -546,19 +534,19 @@
             // chartDiskUse
             // 
             this.chartDiskUse.BackColor = System.Drawing.Color.PapayaWhip;
-            chartArea4.Name = "ChartArea1";
-            this.chartDiskUse.ChartAreas.Add(chartArea4);
-            legend3.Enabled = false;
-            legend3.Name = "Legend1";
-            this.chartDiskUse.Legends.Add(legend3);
+            chartArea10.Name = "ChartArea1";
+            this.chartDiskUse.ChartAreas.Add(chartArea10);
+            legend8.Enabled = false;
+            legend8.Name = "Legend1";
+            this.chartDiskUse.Legends.Add(legend8);
             this.chartDiskUse.Location = new System.Drawing.Point(17, 44);
             this.chartDiskUse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartDiskUse.Name = "chartDiskUse";
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series5.Legend = "Legend1";
-            series5.Name = "DiskUse";
-            this.chartDiskUse.Series.Add(series5);
+            series14.ChartArea = "ChartArea1";
+            series14.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series14.Legend = "Legend1";
+            series14.Name = "DiskUse";
+            this.chartDiskUse.Series.Add(series14);
             this.chartDiskUse.Size = new System.Drawing.Size(700, 300);
             this.chartDiskUse.TabIndex = 1;
             this.chartDiskUse.Text = "chart1";
@@ -573,46 +561,48 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "% Active Time";
             // 
-            // tabWifi
+            // tabInternet
             // 
-            this.tabWifi.BackColor = System.Drawing.Color.Moccasin;
-            this.tabWifi.Controls.Add(this.labelWifiR);
-            this.tabWifi.Controls.Add(this.labelWifiS);
-            this.tabWifi.Controls.Add(this.label18);
-            this.tabWifi.Controls.Add(this.label17);
-            this.tabWifi.Controls.Add(this.label15);
-            this.tabWifi.Controls.Add(this.chartWifi);
-            this.tabWifi.Location = new System.Drawing.Point(4, 25);
-            this.tabWifi.Name = "tabWifi";
-            this.tabWifi.Size = new System.Drawing.Size(735, 549);
-            this.tabWifi.TabIndex = 3;
-            this.tabWifi.Text = "Wi-Fi";
+            this.tabInternet.BackColor = System.Drawing.Color.Moccasin;
+            this.tabInternet.Controls.Add(this.label19);
+            this.tabInternet.Controls.Add(this.labelNetworkType);
+            this.tabInternet.Controls.Add(this.labelNetR);
+            this.tabInternet.Controls.Add(this.labelNetS);
+            this.tabInternet.Controls.Add(this.label18);
+            this.tabInternet.Controls.Add(this.label17);
+            this.tabInternet.Controls.Add(this.label15);
+            this.tabInternet.Controls.Add(this.chartInternet);
+            this.tabInternet.Location = new System.Drawing.Point(4, 25);
+            this.tabInternet.Name = "tabInternet";
+            this.tabInternet.Size = new System.Drawing.Size(735, 549);
+            this.tabInternet.TabIndex = 3;
+            this.tabInternet.Text = "Internet";
             // 
-            // labelWifiR
+            // labelNetR
             // 
-            this.labelWifiR.AutoSize = true;
-            this.labelWifiR.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelWifiR.Location = new System.Drawing.Point(222, 427);
-            this.labelWifiR.Name = "labelWifiR";
-            this.labelWifiR.Size = new System.Drawing.Size(88, 29);
-            this.labelWifiR.TabIndex = 3;
-            this.labelWifiR.Text = "0 Kbps";
+            this.labelNetR.AutoSize = true;
+            this.labelNetR.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNetR.Location = new System.Drawing.Point(56, 492);
+            this.labelNetR.Name = "labelNetR";
+            this.labelNetR.Size = new System.Drawing.Size(88, 29);
+            this.labelNetR.TabIndex = 3;
+            this.labelNetR.Text = "0 Kbps";
             // 
-            // labelWifiS
+            // labelNetS
             // 
-            this.labelWifiS.AutoSize = true;
-            this.labelWifiS.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelWifiS.Location = new System.Drawing.Point(56, 427);
-            this.labelWifiS.Name = "labelWifiS";
-            this.labelWifiS.Size = new System.Drawing.Size(88, 29);
-            this.labelWifiS.TabIndex = 3;
-            this.labelWifiS.Text = "0 Kbps";
+            this.labelNetS.AutoSize = true;
+            this.labelNetS.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNetS.Location = new System.Drawing.Point(56, 409);
+            this.labelNetS.Name = "labelNetS";
+            this.labelNetS.Size = new System.Drawing.Size(88, 29);
+            this.labelNetS.TabIndex = 3;
+            this.labelNetS.Text = "0 Kbps";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(223, 389);
+            this.label18.Location = new System.Drawing.Point(57, 461);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(69, 20);
             this.label18.TabIndex = 2;
@@ -622,7 +612,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(57, 389);
+            this.label17.Location = new System.Drawing.Point(57, 380);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(47, 20);
             this.label17.TabIndex = 2;
@@ -638,31 +628,31 @@
             this.label15.TabIndex = 1;
             this.label15.Text = "Throughput";
             // 
-            // chartWifi
+            // chartInternet
             // 
-            this.chartWifi.BackColor = System.Drawing.Color.PapayaWhip;
-            chartArea5.Name = "ChartArea1";
-            this.chartWifi.ChartAreas.Add(chartArea5);
-            legend4.Enabled = false;
-            legend4.Name = "Legend1";
-            this.chartWifi.Legends.Add(legend4);
-            this.chartWifi.Location = new System.Drawing.Point(13, 48);
-            this.chartWifi.Name = "chartWifi";
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series6.IsVisibleInLegend = false;
-            series6.Legend = "Legend1";
-            series6.Name = "Send";
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series7.IsVisibleInLegend = false;
-            series7.Legend = "Legend1";
-            series7.Name = "Receive";
-            this.chartWifi.Series.Add(series6);
-            this.chartWifi.Series.Add(series7);
-            this.chartWifi.Size = new System.Drawing.Size(700, 300);
-            this.chartWifi.TabIndex = 0;
-            this.chartWifi.Text = "chart1";
+            this.chartInternet.BackColor = System.Drawing.Color.PapayaWhip;
+            chartArea6.Name = "ChartArea1";
+            this.chartInternet.ChartAreas.Add(chartArea6);
+            legend5.Enabled = false;
+            legend5.Name = "Legend1";
+            this.chartInternet.Legends.Add(legend5);
+            this.chartInternet.Location = new System.Drawing.Point(13, 48);
+            this.chartInternet.Name = "chartInternet";
+            series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series8.IsVisibleInLegend = false;
+            series8.Legend = "Legend1";
+            series8.Name = "Send";
+            series9.ChartArea = "ChartArea1";
+            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series9.IsVisibleInLegend = false;
+            series9.Legend = "Legend1";
+            series9.Name = "Receive";
+            this.chartInternet.Series.Add(series8);
+            this.chartInternet.Series.Add(series9);
+            this.chartInternet.Size = new System.Drawing.Size(700, 300);
+            this.chartInternet.TabIndex = 0;
+            this.chartInternet.Text = "chart1";
             // 
             // pCPU
             // 
@@ -735,94 +725,24 @@
             this.pProcess.CounterName = "Thread Count";
             this.pProcess.InstanceName = "_Total";
             // 
-            // tabEthernet
+            // labelNetworkType
             // 
-            this.tabEthernet.BackColor = System.Drawing.Color.Moccasin;
-            this.tabEthernet.Controls.Add(this.labelEthernetR);
-            this.tabEthernet.Controls.Add(this.labelEthernetS);
-            this.tabEthernet.Controls.Add(this.label21);
-            this.tabEthernet.Controls.Add(this.label20);
-            this.tabEthernet.Controls.Add(this.label19);
-            this.tabEthernet.Controls.Add(this.chartEthernet);
-            this.tabEthernet.Location = new System.Drawing.Point(4, 25);
-            this.tabEthernet.Name = "tabEthernet";
-            this.tabEthernet.Size = new System.Drawing.Size(735, 549);
-            this.tabEthernet.TabIndex = 4;
-            this.tabEthernet.Text = "Ethernet";
-            // 
-            // chartEthernet
-            // 
-            this.chartEthernet.BackColor = System.Drawing.Color.PapayaWhip;
-            chartArea6.Name = "ChartArea1";
-            this.chartEthernet.ChartAreas.Add(chartArea6);
-            legend5.Enabled = false;
-            legend5.Name = "Legend1";
-            this.chartEthernet.Legends.Add(legend5);
-            this.chartEthernet.Location = new System.Drawing.Point(15, 47);
-            this.chartEthernet.Name = "chartEthernet";
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series8.Legend = "Legend1";
-            series8.Name = "Send";
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series9.Legend = "Legend1";
-            series9.Name = "Receive";
-            this.chartEthernet.Series.Add(series8);
-            this.chartEthernet.Series.Add(series9);
-            this.chartEthernet.Size = new System.Drawing.Size(700, 300);
-            this.chartEthernet.TabIndex = 0;
-            this.chartEthernet.Text = "chart1";
+            this.labelNetworkType.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNetworkType.Location = new System.Drawing.Point(258, 409);
+            this.labelNetworkType.Name = "labelNetworkType";
+            this.labelNetworkType.Size = new System.Drawing.Size(455, 72);
+            this.labelNetworkType.TabIndex = 4;
+            this.labelNetworkType.Text = "Network Information";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(52, 24);
+            this.label19.Location = new System.Drawing.Point(259, 380);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(93, 20);
-            this.label19.TabIndex = 1;
-            this.label19.Text = "Throughput";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(68, 393);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(47, 20);
-            this.label20.TabIndex = 1;
-            this.label20.Text = "Send";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(238, 393);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(69, 20);
-            this.label21.TabIndex = 1;
-            this.label21.Text = "Receive";
-            // 
-            // labelEthernetS
-            // 
-            this.labelEthernetS.AutoSize = true;
-            this.labelEthernetS.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEthernetS.Location = new System.Drawing.Point(67, 429);
-            this.labelEthernetS.Name = "labelEthernetS";
-            this.labelEthernetS.Size = new System.Drawing.Size(88, 29);
-            this.labelEthernetS.TabIndex = 2;
-            this.labelEthernetS.Text = "0 Kbps";
-            // 
-            // labelEthernetR
-            // 
-            this.labelEthernetR.AutoSize = true;
-            this.labelEthernetR.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEthernetR.Location = new System.Drawing.Point(237, 429);
-            this.labelEthernetR.Name = "labelEthernetR";
-            this.labelEthernetR.Size = new System.Drawing.Size(88, 29);
-            this.labelEthernetR.TabIndex = 2;
-            this.labelEthernetR.Text = "0 Kbps";
+            this.label19.Size = new System.Drawing.Size(88, 20);
+            this.label19.TabIndex = 5;
+            this.label19.Text = "Active NIC";
             // 
             // PerfForm
             // 
@@ -845,9 +765,9 @@
             this.tabDisk.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartDiskRate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartDiskUse)).EndInit();
-            this.tabWifi.ResumeLayout(false);
-            this.tabWifi.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartWifi)).EndInit();
+            this.tabInternet.ResumeLayout(false);
+            this.tabInternet.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartInternet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pCPU)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pRAM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pDISK)).EndInit();
@@ -860,9 +780,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pNPaged)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pHandle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pProcess)).EndInit();
-            this.tabEthernet.ResumeLayout(false);
-            this.tabEthernet.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartEthernet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -916,19 +833,14 @@
         private System.Windows.Forms.Label labelCPU;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabControl tabPerformance;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartWifi;
-        private System.Windows.Forms.Label labelWifiR;
-        private System.Windows.Forms.Label labelWifiS;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartInternet;
+        private System.Windows.Forms.Label labelNetR;
+        private System.Windows.Forms.Label labelNetS;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TabPage tabWifi;
-        private System.Windows.Forms.TabPage tabEthernet;
-        private System.Windows.Forms.Label labelEthernetR;
-        private System.Windows.Forms.Label labelEthernetS;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TabPage tabInternet;
+        private System.Windows.Forms.Label labelNetworkType;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartEthernet;
     }
 }
