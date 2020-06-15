@@ -54,3 +54,15 @@ C:\Users\vanan\Source\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTas
 C:\Users\vanan\Source\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.RunNewTaskForm.resources
 C:\Users\vanan\Source\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.TaskManagerForm.resources
 C:\Users\vanan\Source\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.csproj.GenerateResource.Cache
+D:\GitHub\OS_project\Task-Manager-Windows\SimpleTaskManager\bin\Debug\SimpleTaskManager.exe.config
+D:\GitHub\OS_project\Task-Manager-Windows\SimpleTaskManager\bin\Debug\SimpleTaskManager.exe
+D:\GitHub\OS_project\Task-Manager-Windows\SimpleTaskManager\bin\Debug\SimpleTaskManager.pdb
+D:\GitHub\OS_project\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.csprojAssemblyReference.cache
+D:\GitHub\OS_project\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.PerfForm.resources
+D:\GitHub\OS_project\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.Properties.Resources.resources
+D:\GitHub\OS_project\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.RunNewTaskForm.resources
+D:\GitHub\OS_project\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.TaskManagerForm.resources
+D:\GitHub\OS_project\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.csproj.GenerateResource.cache
+D:\GitHub\OS_project\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.csproj.CoreCompileInputs.cache
+D:\GitHub\OS_project\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.exe
+D:\GitHub\OS_project\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.pdb
