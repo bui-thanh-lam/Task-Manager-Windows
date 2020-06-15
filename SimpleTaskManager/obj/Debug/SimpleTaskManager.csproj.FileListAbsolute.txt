@@ -66,3 +66,13 @@ D:\GitHub\OS_project\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTask
 D:\GitHub\OS_project\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.csproj.CoreCompileInputs.cache
 D:\GitHub\OS_project\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.exe
 D:\GitHub\OS_project\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.pdb
+E:\1. HUST\2019\20192\Nguyên lý HĐH\Task-Manager-Windows\SimpleTaskManager\bin\Debug\SimpleTaskManager.exe.config
+E:\1. HUST\2019\20192\Nguyên lý HĐH\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.exe
+E:\1. HUST\2019\20192\Nguyên lý HĐH\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.pdb
+E:\1. HUST\2019\20192\Nguyên lý HĐH\Task-Manager-Windows\SimpleTaskManager\bin\Debug\SimpleTaskManager.exe
+E:\1. HUST\2019\20192\Nguyên lý HĐH\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.csprojResolveAssemblyReference.cache
+E:\1. HUST\2019\20192\Nguyên lý HĐH\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.PerfForm.resources
+E:\1. HUST\2019\20192\Nguyên lý HĐH\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.Properties.Resources.resources
+E:\1. HUST\2019\20192\Nguyên lý HĐH\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.RunNewTaskForm.resources
+E:\1. HUST\2019\20192\Nguyên lý HĐH\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.TaskManagerForm.resources
+E:\1. HUST\2019\20192\Nguyên lý HĐH\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.csproj.GenerateResource.Cache
