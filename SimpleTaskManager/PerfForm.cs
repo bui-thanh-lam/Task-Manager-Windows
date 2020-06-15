@@ -12,6 +12,7 @@ using Microsoft.VisualBasic.Devices;
 using System.Diagnostics;
 using System.Threading;
 using System.Windows.Forms.DataVisualization.Charting;
+using System.Net.NetworkInformation;
 
 namespace SimpleTaskManager
 {
@@ -23,10 +24,8 @@ namespace SimpleTaskManager
         }
 
         private int count = 0;
-        private PerformanceCounter pWifiS = new PerformanceCounter();
-        private PerformanceCounter pWifiR = new PerformanceCounter();
-        private PerformanceCounter pEthernetS = new PerformanceCounter();
-        private PerformanceCounter pEthernetR = new PerformanceCounter();
+        private PerformanceCounter pNetS = new PerformanceCounter();
+        private PerformanceCounter pNetR = new PerformanceCounter();
 
         private void CPU_count(int count) // biểu diễn hiệu năng của CPU
         {
@@ -90,95 +89,52 @@ namespace SimpleTaskManager
             chartDiskRate.Series["DiskWrite"].Points.AddY(fdWrite / 1024);
         }
 
-        private void WIFI_count(int count) // biểu diễn hiệu thông số kết nối Wi-Fi
-        { 
-            String name = String.Copy(getWifiCard());
+        private void INTERNET_count(int count) // biểu diễn hiệu thông số kết nối Internet
+        {
+            NetworkInterface nic = getNIC();
+            String name = String.Copy(nic.Description);
+            name = name.Replace("(", "[");
+            name = name.Replace(")", "]");
             try
             {
-                pWifiS.CategoryName = "Network Interface";
-                pWifiS.CounterName = "Bytes Sent/sec";
-                pWifiS.InstanceName = name;
-                pWifiR.CategoryName = "Network Interface";
-                pWifiR.CounterName = "Bytes Received/sec";
-                pWifiR.InstanceName = name;
-                float fsend = pWifiS.NextValue();
-                float freceive = pWifiR.NextValue();
+                pNetS.CategoryName = "Network Interface";
+                pNetS.CounterName = "Bytes Sent/sec";
+                pNetS.InstanceName = name;
+                pNetR.CategoryName = "Network Interface";
+                pNetR.CounterName = "Bytes Received/sec";
+                pNetR.InstanceName = name;
+                float fsend = pNetS.NextValue();
+                float freceive = pNetR.NextValue();
 
-                labelWifiS.Text = string.Format("{0:0.0} Kbps", fsend * 8 / 1024);
-                labelWifiR.Text = string.Format("{0:0.0} Kbps", freceive * 8 / 1024);
+                labelNetS.Text = string.Format("{0:0.0} Kbps", fsend * 8 / 1024);
+                labelNetR.Text = string.Format("{0:0.0} Kbps", freceive * 8 / 1024);
 
                 if (count >= 60)
                 {
-                    chartWifi.Series["Send"].Points.RemoveAt(0);
-                    chartWifi.Series["Receive"].Points.RemoveAt(0);
+                    chartInternet.Series["Send"].Points.RemoveAt(0);
+                    chartInternet.Series["Receive"].Points.RemoveAt(0);
                 }
-                chartWifi.Series["Send"].Points.AddY(fsend * 8 / 1024);
-                chartWifi.Series["Receive"].Points.AddY(freceive * 8 / 1024);
-            } 
-            catch (InvalidOperationException e)
-            {
-                Console.WriteLine(e.Message);
-            }       
-        }
-
-        public String getWifiCard() // tìm tên Card Wi-Fi
-        {
-            string s = "";
-            PerformanceCounterCategory category = new PerformanceCounterCategory("Network Interface");
-            String[] instancename = category.GetInstanceNames();
-
-            foreach (string name in instancename)
-            {
-                if (name.Contains("Wireless"))
-                    s = String.Copy(name);
-            }
-            return s;
-        }
-
-        private void ETHERNET_count(int count) // biểu diễn hiệu thông số kết nối Ethernet
-        {
-            String name = String.Copy(getEthernetCard());
-            try
-            {
-                pEthernetS.CategoryName = "Network Interface";
-                pEthernetS.CounterName = "Bytes Sent/sec";
-                pEthernetS.InstanceName = name;
-                pEthernetR.CategoryName = "Network Interface";
-                pEthernetR.CounterName = "Bytes Received/sec";
-                pEthernetR.InstanceName = name;
-                float fsend = pEthernetS.NextValue();
-                float freceive = pEthernetR.NextValue();
-
-                labelEthernetS.Text = string.Format("{0:0.0} Kbps", fsend * 8 / 1024);
-                labelEthernetR.Text = string.Format("{0:0.0} Kbps", freceive * 8 / 1024);
-
-                if (count >= 60)
-                {
-                    chartEthernet.Series["Send"].Points.RemoveAt(0);
-                    chartEthernet.Series["Receive"].Points.RemoveAt(0);
-                }
-                chartEthernet.Series["Send"].Points.AddY(fsend * 8 / 1024);
-                chartEthernet.Series["Receive"].Points.AddY(freceive * 8 / 1024);
+                chartInternet.Series["Send"].Points.AddY(fsend * 8 / 1024);
+                chartInternet.Series["Receive"].Points.AddY(freceive * 8 / 1024);
             }
             catch (InvalidOperationException e)
             {
                 Console.WriteLine(e.Message);
             }
+            labelNetworkType.Text = String.Copy(nic.Description);
         }
 
-        public String getEthernetCard() // tìm tên Card Ethernet
+        public NetworkInterface getNIC() // tìm active Network Interface Card
         {
-            string s = "";
-            PerformanceCounterCategory category = new PerformanceCounterCategory("Network Interface");
-            String[] instancename = category.GetInstanceNames();
-
-            foreach (string name in instancename)
+            NetworkInterface[] nics = NetworkInterface.GetAllNetworkInterfaces();
+            foreach (NetworkInterface nic in nics)
             {
-                if (name.Contains("Ethernet"))
-                    s = String.Copy(name);
+                if (nic.OperationalStatus.ToString().Equals("Up"))
+                {
+                    return nic;
+                }
             }
-            Console.WriteLine(s);
-            return s;
+            return null;
         }
 
         private void timer_Tick(object sender, EventArgs e)
@@ -187,17 +143,14 @@ namespace SimpleTaskManager
             CPU_count(count);
             RAM_count(count);
             DISK_count(count);
-            WIFI_count(count);
-            ETHERNET_count(count);
+            INTERNET_count(count);
             count++;
         }
 
         private void perfForm_Load(object sender, EventArgs e)
         {
-            if (getWifiCard().Length == 0)
-                tabPerformance.TabPages.Remove(tabWifi);
-            if (getEthernetCard().Length == 0)
-                tabPerformance.TabPages.Remove(tabWifi);
+            if (getNIC() == null)
+                tabPerformance.TabPages.Remove(tabInternet);
             timer.Start();
         }
 
