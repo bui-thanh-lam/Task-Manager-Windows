@@ -93,7 +93,6 @@ namespace SimpleTaskManager
         private void WIFI_count(int count) // biểu diễn hiệu thông số kết nối Wi-Fi
         { 
             String name = String.Copy(getWifiCard());
-            Console.WriteLine(name);
             try
             {
                 pWifiS.CategoryName = "Network Interface";
@@ -116,7 +115,7 @@ namespace SimpleTaskManager
                 chartWifi.Series["Send"].Points.AddY(fsend * 8 / 1024);
                 chartWifi.Series["Receive"].Points.AddY(freceive * 8 / 1024);
             } 
-            catch (InvalidCastException e)
+            catch (InvalidOperationException e)
             {
                 Console.WriteLine(e.Message);
             }       
@@ -139,7 +138,6 @@ namespace SimpleTaskManager
         private void ETHERNET_count(int count) // biểu diễn hiệu thông số kết nối Ethernet
         {
             String name = String.Copy(getEthernetCard());
-            Console.WriteLine(name);
             try
             {
                 pEthernetS.CategoryName = "Network Interface";
@@ -162,7 +160,7 @@ namespace SimpleTaskManager
                 chartEthernet.Series["Send"].Points.AddY(fsend * 8 / 1024);
                 chartEthernet.Series["Receive"].Points.AddY(freceive * 8 / 1024);
             }
-            catch (InvalidCastException e)
+            catch (InvalidOperationException e)
             {
                 Console.WriteLine(e.Message);
             }
