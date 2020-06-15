@@ -55,6 +55,7 @@
             // 
             // listView
             // 
+            this.listView.BackColor = System.Drawing.Color.White;
             this.listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.ProcessName,
             this.ProcessID,
@@ -99,6 +100,7 @@
             // 
             // rightClickMenu
             // 
+            this.rightClickMenu.BackColor = System.Drawing.Color.PeachPuff;
             this.rightClickMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.rightClickMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.endTaskToolStripMenuItem,
@@ -130,6 +132,7 @@
             this.idleToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.idleToolStripMenuItem.Text = "Idle";
             this.idleToolStripMenuItem.Click += new System.EventHandler(this.idleToolStripMenuItem_Click);
+            this.idleToolStripMenuItem.BackColor = System.Drawing.Color.PeachPuff;
             // 
             // normalToolStripMenuItem
             // 
@@ -137,6 +140,7 @@
             this.normalToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.normalToolStripMenuItem.Text = "Normal";
             this.normalToolStripMenuItem.Click += new System.EventHandler(this.normalToolStripMenuItem_Click);
+            this.normalToolStripMenuItem.BackColor = System.Drawing.Color.PeachPuff;
             // 
             // highToolStripMenuItem
             // 
@@ -144,6 +148,7 @@
             this.highToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.highToolStripMenuItem.Text = "High";
             this.highToolStripMenuItem.Click += new System.EventHandler(this.highToolStripMenuItem_Click);
+            this.highToolStripMenuItem.BackColor = System.Drawing.Color.PeachPuff;
             // 
             // realtimeToolStripMenuItem
             // 
@@ -151,25 +156,30 @@
             this.realtimeToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.realtimeToolStripMenuItem.Text = "Realtime";
             this.realtimeToolStripMenuItem.Click += new System.EventHandler(this.realtimeToolStripMenuItem_Click);
+            this.realtimeToolStripMenuItem.BackColor = System.Drawing.Color.PeachPuff;
             // 
             // endTaskButton
             // 
+            this.endTaskButton.BackColor = System.Drawing.Color.LightSalmon;
+            this.endTaskButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.endTaskButton.Location = new System.Drawing.Point(587, 524);
             this.endTaskButton.Name = "endTaskButton";
             this.endTaskButton.Size = new System.Drawing.Size(75, 23);
             this.endTaskButton.TabIndex = 1;
             this.endTaskButton.Text = "End Task";
-            this.endTaskButton.UseVisualStyleBackColor = true;
+            this.endTaskButton.UseVisualStyleBackColor = false;
             this.endTaskButton.Click += new System.EventHandler(this.endTaskButton_Click);
             // 
             // reloadButton
             // 
+            this.reloadButton.BackColor = System.Drawing.Color.LightSalmon;
+            this.reloadButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.reloadButton.Location = new System.Drawing.Point(13, 524);
             this.reloadButton.Name = "reloadButton";
             this.reloadButton.Size = new System.Drawing.Size(75, 23);
             this.reloadButton.TabIndex = 2;
             this.reloadButton.Text = "Reload";
-            this.reloadButton.UseVisualStyleBackColor = true;
+            this.reloadButton.UseVisualStyleBackColor = false;
             this.reloadButton.Click += new System.EventHandler(this.reloadButton_Click);
             // 
             // perfButton
@@ -197,6 +207,7 @@
             this.toolToolStripMenuItem.Name = "toolToolStripMenuItem";
             this.toolToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
             this.toolToolStripMenuItem.Text = "Tool";
+            this.toolToolStripMenuItem.BackColor = System.Drawing.Color.LightSalmon;
             // 
             // runNewTaskToolStripMenuItem
             // 
@@ -204,6 +215,8 @@
             this.runNewTaskToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.runNewTaskToolStripMenuItem.Text = "Run New Task";
             this.runNewTaskToolStripMenuItem.Click += new System.EventHandler(this.runNewTaskToolStripMenuItem_Click);
+            this.runNewTaskToolStripMenuItem.BackColor = System.Drawing.Color.PeachPuff;
+
             // 
             // performanceToolStripMenuItem
             // 
@@ -211,6 +224,7 @@
             this.performanceToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.performanceToolStripMenuItem.Text = "Performance";
             this.performanceToolStripMenuItem.Click += new System.EventHandler(this.performanceToolStripMenuItem_Click);
+            this.performanceToolStripMenuItem.BackColor = System.Drawing.Color.PeachPuff;
             // 
             // TaskManagerForm
             // 

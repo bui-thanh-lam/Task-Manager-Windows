@@ -33,7 +33,7 @@
             this.btnRun = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // "Open" Label
+            // openLabel
             // 
             this.openLabel.AutoSize = true;
             this.openLabel.Location = new System.Drawing.Point(12, 19);
@@ -42,7 +42,7 @@
             this.openLabel.TabIndex = 0;
             this.openLabel.Text = "Open:";
             // 
-            // Input to run new task
+            // openInput
             // 
             this.openInput.Location = new System.Drawing.Point(54, 16);
             this.openInput.Name = "openInput";
@@ -51,27 +51,31 @@
             // 
             // btnRun
             // 
+            this.btnRun.BackColor = System.Drawing.Color.LightSalmon;
             this.btnRun.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnRun.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRun.Location = new System.Drawing.Point(313, 47);
             this.btnRun.Name = "btnRun";
             this.btnRun.Size = new System.Drawing.Size(89, 22);
             this.btnRun.TabIndex = 2;
             this.btnRun.Text = "&Run";
-            this.btnRun.UseVisualStyleBackColor = true;
+            this.btnRun.UseVisualStyleBackColor = false;
             this.btnRun.Click += new System.EventHandler(this.btnRun_Click);
             // 
-            // RunNewTask
+            // RunNewTaskForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Moccasin;
             this.ClientSize = new System.Drawing.Size(430, 103);
             this.Controls.Add(this.btnRun);
             this.Controls.Add(this.openInput);
             this.Controls.Add(this.openLabel);
             this.MaximizeBox = false;
-            this.Name = "RunNewTask";
+            this.Name = "RunNewTaskForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Run new task";
+            this.Load += new System.EventHandler(this.RunNewTaskForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

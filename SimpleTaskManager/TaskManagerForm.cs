@@ -21,7 +21,7 @@ namespace SimpleTaskManager
 
         Process[] processes;
 
-        void GetProcess()
+        void GetProcess() // liệt kê các tiến trình đang thực hiện tại thời điểm hiện tại
         {
             processes = Process.GetProcesses();
             listView.Items.Clear();
@@ -37,7 +37,7 @@ namespace SimpleTaskManager
             }
         }
 
-        string MemoryToString(long memory)
+        string MemoryToString(long memory) // chuyển đổi dung lượng tiến trình đang sử dụng từ kiểu long sang kiểu string
         {
             string[] suffixes = { " B", " KB", " MB", " GB", " TB", " PB" };
             for (int i = 0; i < suffixes.Length; i++)
@@ -50,7 +50,18 @@ namespace SimpleTaskManager
             return memory.ToString();
         }
 
-        private Process getSelectedProcess()
+        void changeColor()
+        {
+            int i = 0;
+            foreach (Process p in processes)
+            {
+                if (i % 2 == 0) listView.Items[i].BackColor = Color.Moccasin;
+                else listView.Items[i].BackColor = Color.White;
+                i++;
+            }
+        }
+
+        private Process getSelectedProcess() // lấy ra tiến trình được lựa chọn
         {
             int index = 0;
             foreach (Process p in processes)
@@ -64,15 +75,16 @@ namespace SimpleTaskManager
             return processes[index];
         }
 
-        private void endTaskToolStripMenuItem_Click(object sender, EventArgs e)
+        private void endTaskToolStripMenuItem_Click(object sender, EventArgs e) // dừng một tiến trình bằng cách sử dụng button trên giao diện
         {
             if (listView.SelectedItems.Count > 0)
             {
                 getSelectedProcess().Kill();
             }
+            changeColor();
         }
 
-        private void idleToolStripMenuItem_Click(object sender, EventArgs e)
+        private void idleToolStripMenuItem_Click(object sender, EventArgs e) // đặt lại mức độ ưu tiên cho các tiếm trình với các mức idle/ normal/ high/ realtime
         {
             if (listView.SelectedItems.Count > 0)
             {
@@ -104,35 +116,41 @@ namespace SimpleTaskManager
             }
         }
 
-        private void endTaskButton_Click(object sender, EventArgs e)
+        private void endTaskButton_Click(object sender, EventArgs e) // dừng một tiến trình đang thực hiện bằng cách click trực tiếp vào tiến trình đó
         {
             if (listView.SelectedItems.Count > 0)
             {
                 getSelectedProcess().Kill();
             }
+            changeColor();
         }
 
-        private void reloadButton_Click(object sender, EventArgs e)
+        private void reloadButton_Click(object sender, EventArgs e) // cập nhật lại danh sách tiến trình
         {
             GetProcess();
+            changeColor();
         }
 
-        private void listView_ColumnClick(object sender, ColumnClickEventArgs e)
+        private void listView_ColumnClick(object sender, ColumnClickEventArgs e) // sắp xếp các tiến trình theo thứ tự tăng dần giá trị ứng với cột được chọn
         {
             listView.ListViewItemSorter = new ListViewItemComparer(e.Column);
             listView.Sort();
+            changeColor();
         }
 
-        private void runNewTaskToolStripMenuItem_Click(object sender, EventArgs e)
+        private void runNewTaskToolStripMenuItem_Click(object sender, EventArgs e) // mở của sổ chạy một ứng dụng mới
         {
             using (RunNewTaskForm runNewTaskForm = new RunNewTaskForm())
             {
                 if (runNewTaskForm.ShowDialog() == DialogResult.OK)
+                {
                     GetProcess();
+                    changeColor();
+                }
             }
         }
 
-        private void performanceToolStripMenuItem_Click(object sender, EventArgs e)
+        private void performanceToolStripMenuItem_Click(object sender, EventArgs e) // mở cửa sổ biểu diễn hiệu suất hệ thống: CPU, RAM
         {
             PerfForm perfForm = new PerfForm();
             perfForm.ShowDialog();

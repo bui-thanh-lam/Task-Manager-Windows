@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace SimpleTaskManager
 {
-    public class ListViewItemComparer : IComparer
+    public class ListViewItemComparer : IComparer // so sánh 
     {
         private int col;
         public ListViewItemComparer()

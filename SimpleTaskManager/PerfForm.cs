@@ -20,7 +20,7 @@ namespace SimpleTaskManager
             InitializeComponent();
         }
 
-        private void CPU_count() 
+        private void CPU_count() // biểu diễn hiệu năng của CPU
         {
             float fcpu = pCPU.NextValue();
             float fhandle = pHandle.NextValue();
@@ -33,7 +33,7 @@ namespace SimpleTaskManager
             chartCPU.Series["CPU"].Points.AddY(fcpu);
         }
 
-        private void RAM_count()
+        private void RAM_count() // biểu diễn hiệu năng của RAM
         {
             ComputerInfo cpI = new ComputerInfo();
             float fram = pRAM.NextValue();
@@ -54,7 +54,7 @@ namespace SimpleTaskManager
             chartRAM.Series["RAM"].Points.AddY(fram);
         }
 
-        private void DISK_count()
+        private void DISK_count() // biểu diễn hiệu năng của DISK
         {
             float fdisk = pDISK.NextValue();
             float fdRead = pReadSpd.NextValue();

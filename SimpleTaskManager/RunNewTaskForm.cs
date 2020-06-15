@@ -18,7 +18,7 @@ namespace SimpleTaskManager
             InitializeComponent();
         }
 
-        private void btnRun_Click(object sender, EventArgs e)
+        private void btnRun_Click(object sender, EventArgs e) // chạy một ứng dụng mà người dùng mới nhập vào
         {
             if (!string.IsNullOrEmpty(openInput.Text))
             {
@@ -33,6 +33,11 @@ namespace SimpleTaskManager
                     MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void RunNewTaskForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
