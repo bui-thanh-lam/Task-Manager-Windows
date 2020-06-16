@@ -81,6 +81,7 @@ namespace SimpleTaskManager
             {
                 getSelectedProcess().Kill();
             }
+            GetProcess();
             changeColor();
         }
 
