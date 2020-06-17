@@ -76,3 +76,4 @@ E:\1. HUST\2019\20192\Nguyên lý HĐH\Task-Manager-Windows\SimpleTaskManager\ob
 E:\1. HUST\2019\20192\Nguyên lý HĐH\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.RunNewTaskForm.resources
 E:\1. HUST\2019\20192\Nguyên lý HĐH\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.TaskManagerForm.resources
 E:\1. HUST\2019\20192\Nguyên lý HĐH\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.csproj.GenerateResource.Cache
+E:\1. HUST\2019\20192\Nguyên lý HĐH\Task-Manager-Windows\SimpleTaskManager\bin\Debug\SimpleTaskManager.pdb

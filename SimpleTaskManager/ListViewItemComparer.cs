@@ -22,16 +22,16 @@ namespace SimpleTaskManager
         public int Compare(object x, object y)
         {
             int returnValue = -1;
-            if (col == 0 || col == 3 || col ==4)
+            if (col == 1 || col == 4 || col == 5)
             {
                 returnValue = String.Compare(((ListViewItem)x).SubItems[col].Text,
                     ((ListViewItem)y).SubItems[col].Text);
-            } else if (col == 1)
-            {
-                returnValue = Int32.Parse(((ListViewItem)x).SubItems[col].Text) - Int32.Parse(((ListViewItem)y).SubItems[col].Text);
             } else if (col == 2)
             {
-                returnValue = Int32.Parse(((ListViewItem)x).SubItems[5].Text) - Int32.Parse(((ListViewItem)y).SubItems[5].Text);
+                returnValue = Int32.Parse(((ListViewItem)x).SubItems[col].Text) - Int32.Parse(((ListViewItem)y).SubItems[col].Text);
+            } else if (col == 3)
+            {
+                returnValue = Int32.Parse(((ListViewItem)x).SubItems[6].Text) - Int32.Parse(((ListViewItem)y).SubItems[6].Text);
             }
             return returnValue;
         }

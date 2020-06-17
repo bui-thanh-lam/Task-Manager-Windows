@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TaskManagerForm));
             this.listView = new System.Windows.Forms.ListView();
             this.ProcessName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ProcessID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -49,6 +50,7 @@
             this.toolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.runNewTaskToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.performanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Img = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.rightClickMenu.SuspendLayout();
             this.mainMenu.SuspendLayout();
             this.SuspendLayout();
@@ -57,6 +59,7 @@
             // 
             this.listView.BackColor = System.Drawing.Color.White;
             this.listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Img,
             this.ProcessName,
             this.ProcessID,
             this.Memory,
@@ -128,35 +131,35 @@
             // 
             // idleToolStripMenuItem
             // 
+            this.idleToolStripMenuItem.BackColor = System.Drawing.Color.PeachPuff;
             this.idleToolStripMenuItem.Name = "idleToolStripMenuItem";
             this.idleToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.idleToolStripMenuItem.Text = "Idle";
             this.idleToolStripMenuItem.Click += new System.EventHandler(this.idleToolStripMenuItem_Click);
-            this.idleToolStripMenuItem.BackColor = System.Drawing.Color.PeachPuff;
             // 
             // normalToolStripMenuItem
             // 
+            this.normalToolStripMenuItem.BackColor = System.Drawing.Color.PeachPuff;
             this.normalToolStripMenuItem.Name = "normalToolStripMenuItem";
             this.normalToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.normalToolStripMenuItem.Text = "Normal";
             this.normalToolStripMenuItem.Click += new System.EventHandler(this.normalToolStripMenuItem_Click);
-            this.normalToolStripMenuItem.BackColor = System.Drawing.Color.PeachPuff;
             // 
             // highToolStripMenuItem
             // 
+            this.highToolStripMenuItem.BackColor = System.Drawing.Color.PeachPuff;
             this.highToolStripMenuItem.Name = "highToolStripMenuItem";
             this.highToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.highToolStripMenuItem.Text = "High";
             this.highToolStripMenuItem.Click += new System.EventHandler(this.highToolStripMenuItem_Click);
-            this.highToolStripMenuItem.BackColor = System.Drawing.Color.PeachPuff;
             // 
             // realtimeToolStripMenuItem
             // 
+            this.realtimeToolStripMenuItem.BackColor = System.Drawing.Color.PeachPuff;
             this.realtimeToolStripMenuItem.Name = "realtimeToolStripMenuItem";
             this.realtimeToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.realtimeToolStripMenuItem.Text = "Realtime";
             this.realtimeToolStripMenuItem.Click += new System.EventHandler(this.realtimeToolStripMenuItem_Click);
-            this.realtimeToolStripMenuItem.BackColor = System.Drawing.Color.PeachPuff;
             // 
             // endTaskButton
             // 
@@ -201,30 +204,34 @@
             // 
             // toolToolStripMenuItem
             // 
+            this.toolToolStripMenuItem.BackColor = System.Drawing.Color.LightSalmon;
             this.toolToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.runNewTaskToolStripMenuItem,
             this.performanceToolStripMenuItem});
             this.toolToolStripMenuItem.Name = "toolToolStripMenuItem";
             this.toolToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
             this.toolToolStripMenuItem.Text = "Tool";
-            this.toolToolStripMenuItem.BackColor = System.Drawing.Color.LightSalmon;
             // 
             // runNewTaskToolStripMenuItem
             // 
+            this.runNewTaskToolStripMenuItem.BackColor = System.Drawing.Color.PeachPuff;
             this.runNewTaskToolStripMenuItem.Name = "runNewTaskToolStripMenuItem";
             this.runNewTaskToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.runNewTaskToolStripMenuItem.Text = "Run New Task";
             this.runNewTaskToolStripMenuItem.Click += new System.EventHandler(this.runNewTaskToolStripMenuItem_Click);
-            this.runNewTaskToolStripMenuItem.BackColor = System.Drawing.Color.PeachPuff;
-
             // 
             // performanceToolStripMenuItem
             // 
+            this.performanceToolStripMenuItem.BackColor = System.Drawing.Color.PeachPuff;
             this.performanceToolStripMenuItem.Name = "performanceToolStripMenuItem";
             this.performanceToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.performanceToolStripMenuItem.Text = "Performance";
             this.performanceToolStripMenuItem.Click += new System.EventHandler(this.performanceToolStripMenuItem_Click);
-            this.performanceToolStripMenuItem.BackColor = System.Drawing.Color.PeachPuff;
+            // 
+            // Img
+            // 
+            this.Img.Text = "Img";
+            this.Img.Width = 30;
             // 
             // TaskManagerForm
             // 
@@ -236,8 +243,10 @@
             this.Controls.Add(this.reloadButton);
             this.Controls.Add(this.endTaskButton);
             this.Controls.Add(this.listView);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.mainMenu;
             this.Name = "TaskManagerForm";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Simple Task Manager";
             this.rightClickMenu.ResumeLayout(false);
             this.mainMenu.ResumeLayout(false);
@@ -250,7 +259,6 @@
         #endregion
 
         private System.Windows.Forms.ListView listView;
-        private System.Windows.Forms.ColumnHeader ProcessName;
         private System.Windows.Forms.ColumnHeader ProcessID;
         private System.Windows.Forms.ColumnHeader Memory;
         private System.Windows.Forms.ColumnHeader Status;
@@ -269,6 +277,8 @@
         private System.Windows.Forms.ToolStripMenuItem toolToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem runNewTaskToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem performanceToolStripMenuItem;
+        private System.Windows.Forms.ColumnHeader ProcessName;
+        private System.Windows.Forms.ColumnHeader Img;
     }
 }
 
