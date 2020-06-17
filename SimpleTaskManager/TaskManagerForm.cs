@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Diagnostics;
 using System.Windows.Forms;
 
@@ -20,7 +15,6 @@ namespace SimpleTaskManager
         }
 
         Process[] processes;
-        ImageList procImage = new ImageList();
 
         void GetProcess() // liệt kê các tiến trình đang thực hiện tại thời điểm hiện tại
         {
@@ -28,45 +22,15 @@ namespace SimpleTaskManager
             listView.Items.Clear();
             foreach (Process p in processes)
             {
-
-                Image defaultIcon = Image.FromFile("defa.png");
-                try
-                {
-                    string error = null;
-                    try
-                    {
-                        procImage.Images.Add(p.Id.ToString(),
-                        Icon.ExtractAssociatedIcon(p.MainModule.FileName).ToBitmap());
-                    }
-                    catch (Exception ex)
-                    {
-                        error = ex.Message;
-                    };
-                    
-                    if (error != null)
-                    {
-                        procImage.Images.Add(p.Id.ToString(), defaultIcon);
-                    }
-                                        
-                }
-                catch { };
-
-                ListViewItem newItem = new ListViewItem()
-                {
-                    ImageIndex = procImage.Images.IndexOfKey(p.Id.ToString())
-                };
-
-                newItem.SubItems.Add(new ListViewItem.ListViewSubItem() { Text = p.ProcessName });
+                ListViewItem newItem = new ListViewItem(p.ProcessName);
+                //newItem.SubItems.Add(new ListViewItem.ListViewSubItem() { Text = p.ProcessName });
                 newItem.SubItems.Add(new ListViewItem.ListViewSubItem() { Text = p.Id.ToString() });
                 newItem.SubItems.Add(new ListViewItem.ListViewSubItem() { Text = MemoryToString(p.PrivateMemorySize64) });
                 newItem.SubItems.Add(new ListViewItem.ListViewSubItem() { Text = (p.Responding == true ? "Responding" : "Not responding") });
-                newItem.SubItems.Add(new ListViewItem.ListViewSubItem() { Text = (p.MainWindowHandle == IntPtr.Zero)? "Backgrorund Process" : (String.IsNullOrEmpty(p.MainWindowTitle)?"Window Process":"App") });
+                newItem.SubItems.Add(new ListViewItem.ListViewSubItem() { Text = (p.MainWindowHandle == IntPtr.Zero) ? "Backgrorund Process" : (String.IsNullOrEmpty(p.MainWindowTitle) ? "Window Process" : "App") });
                 newItem.SubItems.Add(new ListViewItem.ListViewSubItem() { Text = p.PrivateMemorySize64.ToString() });
                 listView.Items.Add(newItem);
             }
-
-            listView.LargeImageList = procImage;
-            listView.SmallImageList = procImage;
         }
 
         string MemoryToString(long memory) // chuyển đổi dung lượng tiến trình đang sử dụng từ kiểu long sang kiểu string
@@ -98,7 +62,7 @@ namespace SimpleTaskManager
             int index = 0;
             foreach (Process p in processes)
             {
-                if (p.Id == Int16.Parse(listView.SelectedItems[0].SubItems[2].Text))
+                if (p.Id == Int16.Parse(listView.SelectedItems[0].SubItems[1].Text))
                 {
                     index = processes.ToList().IndexOf(p);
                     break;

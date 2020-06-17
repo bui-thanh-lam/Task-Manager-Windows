@@ -83,3 +83,14 @@ D:\HUST\Năm 2\Nguyên lý hệ điều hành\Bài tập lớn NLHĐH\Task-Manag
 =======
 E:\1. HUST\2019\20192\Nguyên lý HĐH\Task-Manager-Windows\SimpleTaskManager\bin\Debug\SimpleTaskManager.pdb
 >>>>>>> 5851320eef64f167f2bf1e011d3b213653ffe73c
+C:\Users\DELL\Desktop\Task-Manager-Windows\SimpleTaskManager\bin\Debug\SimpleTaskManager.exe.config
+C:\Users\DELL\Desktop\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.exe
+C:\Users\DELL\Desktop\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.pdb
+C:\Users\DELL\Desktop\Task-Manager-Windows\SimpleTaskManager\bin\Debug\SimpleTaskManager.exe
+C:\Users\DELL\Desktop\Task-Manager-Windows\SimpleTaskManager\bin\Debug\SimpleTaskManager.pdb
+C:\Users\DELL\Desktop\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Desktop\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.PerfForm.resources
+C:\Users\DELL\Desktop\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.Properties.Resources.resources
+C:\Users\DELL\Desktop\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.RunNewTaskForm.resources
+C:\Users\DELL\Desktop\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.TaskManagerForm.resources
+C:\Users\DELL\Desktop\Task-Manager-Windows\SimpleTaskManager\obj\Debug\SimpleTaskManager.csproj.GenerateResource.Cache

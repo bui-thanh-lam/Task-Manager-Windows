@@ -50,7 +50,6 @@
             this.toolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.runNewTaskToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.performanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Img = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.rightClickMenu.SuspendLayout();
             this.mainMenu.SuspendLayout();
             this.SuspendLayout();
@@ -59,7 +58,6 @@
             // 
             this.listView.BackColor = System.Drawing.Color.White;
             this.listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.Img,
             this.ProcessName,
             this.ProcessID,
             this.Memory,
@@ -228,11 +226,6 @@
             this.performanceToolStripMenuItem.Text = "Performance";
             this.performanceToolStripMenuItem.Click += new System.EventHandler(this.performanceToolStripMenuItem_Click);
             // 
-            // Img
-            // 
-            this.Img.Text = "Img";
-            this.Img.Width = 30;
-            // 
             // TaskManagerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -278,7 +271,6 @@
         private System.Windows.Forms.ToolStripMenuItem runNewTaskToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem performanceToolStripMenuItem;
         private System.Windows.Forms.ColumnHeader ProcessName;
-        private System.Windows.Forms.ColumnHeader Img;
     }
 }
 
